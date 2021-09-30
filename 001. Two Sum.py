@@ -41,7 +41,7 @@ class Solution(object):
         return [j,k]
 
 
-# method3    
+# method3  : Hashmethod, by using dict to make quick search for the location of (target-num)  
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -53,6 +53,6 @@ class Solution(object):
         for ind, num in enumerate(nums):
             hashmap[num] = ind
         for i, num in enumerate(nums):
-            j = hashmap.get(target -num)
+            j = hashmap.get(target -num) #dict.get: if there is no result, it will return null as default
             if j is not None and i!=j:
                 return [i,j]
