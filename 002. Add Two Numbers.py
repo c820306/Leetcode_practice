@@ -1,15 +1,20 @@
 """
+Question Description
+
 You are given two non-empty linked lists representing two non-negative integers. 
 The digits are stored in reverse order, and each of their nodes contains a single digit. 
 Add the two numbers and return the sum as a linked list.
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 """
-## 1. Adding up the head value of l1 and l2, which will be the head of new Linknode.
-## 2. if there is remaining node, then will discover and adding up all value.
-## 3. Attention that if adding value is more than 10 , it's need to do addition carry
-## 4. Update the current value of node and update the location of current node.
-## 5. When the adding cycle is to the end, there may have the addition carry, which needs to add a new node.
 
+"""
+Explanation
+ 1. Adding up the head value of l1 and l2, which will be the head of new Linknode.
+ 2. if there is remaining node, then will discover and adding up all value.
+ 3. Attention that if adding value is more than 10 , it's need to do addition carry
+ 4. Update the current value of node and update the location of current node.
+ 5. When the adding cycle is to the end, there may have the addition carry, which needs to add a new node.
+"""
 
 # Definition for singly-linked list.
 # class ListNode(object):
